@@ -1,0 +1,17 @@
+<div class="blue-box">
+  <div fxLayout="column" fxFlex="100">
+    <div fxFlex="50">
+      <div fxLayout="row">
+        <div fxFlex="50" class="red-text" fxLayoutAlign="start center">
+          {{box.indexNum}}
+        </div>
+        <div fxFlex="50" fxLayoutAlign="end center">
+          <button type="button" (click)="deleteBox(box.indexNum)" class="red-text">X</button>
+        </div>
+      </div>
+    </div>
+    <div fxFlex="50" class="red-text" fxLayoutAlign="center start">
+      {{box.title}}
+    </div>
+  </div>
+</div>

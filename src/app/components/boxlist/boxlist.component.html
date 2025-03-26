@@ -1,0 +1,7 @@
+<button type="button" (click)="addBox()">Add Box</button>
+
+<div fxLayout="row wrap" >
+  <div fxLayoutAlign.xs="center center" fxFlex.xs="100" fxFlex.sm="50" fxFlex.gt-md="20" *ngFor="let box of boxArr; let i = index">
+    <app-box [box]="box" (deleteBoxFunc)="deleteBox($event)"></app-box>
+  </div>
+</div>
